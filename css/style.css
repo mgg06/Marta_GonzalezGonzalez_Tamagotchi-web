@@ -1,13 +1,112 @@
-nav { 
-	position: fixed; 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	z-index: 100; 
-} 
+@font-face {
+  font-family: "Starshines";
+  src: url("fonts/Starshines.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-main { 
-	padding-top: 60px; 
-} 
+body,
+button,
+a {
+  cursor: url("../images/cursor.cur"), auto;
+}
 
+.titulo-principal {
+  font-family: "Starshines";
+  font-size: 60px;
+  text-align: center;
+  color: #fef102;
+}
 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 38, 74, 0.637);
+  z-index: 90;
+  border-bottom: 1px solid #fef102;
+}
+
+.gifs-header {
+  position: fixed;
+  top: 8px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  z-index: 95;
+}
+
+.gifs-header img {
+  height: 44px;
+  width: auto;
+  display: block;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.izquierda-gif {
+  left: 80px;
+}
+.derecha-gif {
+  right: 80px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  z-index: 100;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Starshines";
+  font-size: 25px;
+  padding: 10px;
+  display: inline-block;
+  color: #fef102;
+}
+
+nav a:hover {
+  background: #fef102;
+  color: #00264a;
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding-top: 70px;
+}
+
+section {
+  grid-column: 1;
+}
+
+aside {
+  grid-column: 2;
+}
+
+.index {
+  background-image: url("../images/fondo-index.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}

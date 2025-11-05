@@ -110,3 +110,13 @@ aside {
   background-position: center;
   background-repeat: repeat;
 }
+
+/* Clase para redimensionar imagenes de introducción */
+.imagen-introduccion {
+  max-width: 100%;
+  width: 300px; /* ancho por defecto */
+  height: auto; /* mantiene la proporción */
+  display: block;
+}
+
+

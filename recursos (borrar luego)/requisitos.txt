@@ -1,0 +1,18 @@
+COSAS A INTRUDUCIR HTML
+
+- Introducir etiqueta <sup> con las generaciones de tamagotchi: ejemplo <h2>Tamagotchi Gen<sup>2</sup></h2>
+<p>La segunda generación introdujo nuevas mascotas y características digitales.</p>
+
+- <sub> (pie de foto)
+
+- lista
+
+- details / summary
+
+- incrustar mapa y video (iframe)
+
+- incluir tabla compleja (colspan/rowspan) 
+
+- formulario
+
+-<strong><em>

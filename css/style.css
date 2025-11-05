@@ -111,12 +111,19 @@ aside {
   background-repeat: repeat;
 }
 
-/* Clase para redimensionar imagenes de introducción */
 .imagen-introduccion {
   max-width: 100%;
-  width: 300px; /* ancho por defecto */
-  height: auto; /* mantiene la proporción */
+  width: 500px; 
+  height: auto; 
   display: block;
 }
+
+.pie-imagen {
+  font-family: "Starshines"; 
+  color: #fef102;
+  font-size: 15px; 
+}
+
+
 
 

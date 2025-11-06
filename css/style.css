@@ -1,3 +1,5 @@
+/* FUENTES Y CURSOR */
+
 @font-face {
   font-family: "Starshines";
   src: url("fonts/Starshines.ttf") format("opentype");
@@ -12,32 +14,24 @@ a {
   cursor: url("../images/cursor.cur"), auto;
 }
 
-.titulo-principal {
-  font-family: "Starshines";
-  font-size: 60px;
-  text-align: center;
-  color: #fef102;
-}
+/* HEADER (lo que es la barra como tal) */
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
+header::before {
 
-header {
+  /* Es obligatorio para que el pseudoelemento exista
+   No muestra texto, simplemente le dice al navegador “crea el bloque” */
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 60px;
   background: rgba(0, 38, 74, 0.637);
-  z-index: 90;
   border-bottom: 1px solid #fef102;
+  z-index: 89;
 }
+
+/* GIFS LATERALES HEADER */
 
 .gifs-header {
   position: fixed;
@@ -52,8 +46,6 @@ header {
   height: 44px;
   width: auto;
   display: block;
-  margin-top: 2px;
-  margin-bottom: 2px;
 }
 
 .izquierda-gif {
@@ -63,16 +55,28 @@ header {
   right: 80px;
 }
 
+/* MENÚ FIJO */
+
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 60px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+
   z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
 }
 
 nav a {
@@ -80,20 +84,38 @@ nav a {
   font-family: "Starshines";
   font-size: 25px;
   padding: 10px;
-  display: inline-block;
   color: #fef102;
 }
 
 nav a:hover {
   background: #fef102;
   color: #00264a;
-  text-decoration: none;
 }
+
+/* CONTENEDOR DEL TÍTULO */
+
+.contenedor-titulo {
+  position: static; /* muy importante: evita que herede el fixed */
+  text-align: center;
+  margin-top: 120px; 
+  margin-bottom: 50px; 
+}
+
+/* TÍTULO PRINCIPAL */
+
+.titulo-principal {
+  font-family: "Starshines";
+  font-size: 60px;
+  color: #fef102;
+  margin: 0;
+}
+
+/* MAIN, SECTION Y ASIDE DE LA PÁGINA */
 
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  padding-top: 70px;
+  padding-top: 20px;
 }
 
 section {
@@ -104,6 +126,8 @@ aside {
   grid-column: 2;
 }
 
+/* FONDO DE LA PÁGINA Y ELEMENTOS GRÁFICOS */
+
 .index {
   background-image: url("../images/fondo-index.png");
   background-size: cover;
@@ -113,17 +137,13 @@ aside {
 
 .imagen-introduccion {
   max-width: 100%;
-  width: 500px; 
-  height: auto; 
+  width: 500px;
+  height: auto;
   display: block;
 }
 
 .pie-imagen {
-  font-family: "Starshines"; 
+  font-family: "Starshines";
   color: #fef102;
-  font-size: 15px; 
+  font-size: 15px;
 }
-
-
-
-

@@ -51,6 +51,7 @@ header::before {
 .izquierda-gif {
   left: 80px;
 }
+
 .derecha-gif {
   right: 80px;
 }
@@ -95,10 +96,11 @@ nav a:hover {
 /* CONTENEDOR DEL TÍTULO */
 
 .contenedor-titulo {
-  position: static; /* muy importante: evita que herede el fixed */
+  position: static;
+  /* muy importante: evita que herede el fixed */
   text-align: center;
-  margin-top: 120px; 
-  margin-bottom: 50px; 
+  margin-top: 120px;
+  margin-bottom: 50px;
 }
 
 /* TÍTULO PRINCIPAL */
@@ -146,4 +148,134 @@ aside {
   font-family: "Starshines";
   color: #fef102;
   font-size: 15px;
+}
+
+/* FORMULARIO */
+
+.formulario-tamagotchi {
+  background-color: #fef102;
+  border: 2px solid #00274E;
+  border-radius: 12px;
+  padding: 20px 30px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.25);
+}
+
+/* TITULO FORMULARIO*/
+.titulo-test {
+  text-align: center;
+  color: #fef102;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+/* AGRUPACIONES FORMULARIO*/
+fieldset {
+  border: 2px dashed #00274E;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #00274E;
+  font-size: 1.1em;
+  padding: 0 8px;
+}
+
+/* CAMPOS Y ETIQUETAS FORMULARIO */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #00274E;
+  font-size: 1em;
+  background-color: #00274E;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #00274E;
+  outline: none;
+  color: white;
+}
+
+input[type="range"] {
+  width: 80%;
+  accent-color: #00274E; /* Pone de ese color la barra */
+}
+
+textarea {
+  resize: vertical;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  background-color: #00274E;
+  color: white;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Mantener texto blanco cuando el campo pierde el foco */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input,
+textarea {
+  caret-color: white;
+  /* el cursor también blanco */
+}
+
+/* Asegura que el texto no cambie de color en ningún estado */
+input:focus,
+input:valid,
+select:focus,
+select:valid,
+textarea:focus,
+textarea:valid {
+  color: white;
+  background-color: #00274E;
+  border-color: #00274E;
+  outline: none;
+}
+
+/* BOTÓN DE ENVÍO FORMULARIO */
+.boton-enviar {
+  display: block;
+  background-color: #00274E;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: background-color 0.3s, transform 0.2s;
+  color: white;
+}
+
+.boton-enviar:hover {
+  background-color: #00274E;
+  transform: scale(1.05);
 }

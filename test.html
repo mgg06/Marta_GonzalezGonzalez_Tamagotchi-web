@@ -1,102 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Página Test</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body class="test">
-    <header>
-      <div class="gifs-header izquierda-gif">
-        <img src="images/izquierda1.gif" alt="bichito-verde" />
-        <img src="images/izquierda2.gif" alt="naranjita-andando" />
-        <img src="images/izquierda3.gif" alt="azul-rodando" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Página Test</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="personajes.html">Personajes</a></li>
-          <li><a href="dispositivos.html">Dispositivos</a></li>
-          <li><a href="test.html">Test</a></li>
-        </ul>
-      </nav>
+<body class="index">
+  <header>
+    <div class="gifs-header izquierda-gif">
+      <img src="images/izquierda1.gif" alt="bichito-verde" />
+      <img src="images/izquierda2.gif" alt="naranjita-andando" />
+      <img src="images/izquierda3.gif" alt="azul-rodando" />
+    </div>
 
-      <div class="gifs-header derecha-gif">
-        <img src="images/derecha1.gif" alt="abeja-andando" />
-        <img src="images/derecha2.gif" alt="conejo-rosa-girando" />
-        <img src="images/derecha3.gif" alt="bicho-naranja" />
-      </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="dispositivos.html">Dispositivos</a></li>
+        <li><a href="test.html">Test</a></li>
+      </ul>
+    </nav>
 
-      <div class="contenedor-titulo">
-        <h1 class="titulo-principal">TEST</h1>
-      </div>
-    </header>
+    <div class="gifs-header derecha-gif">
+      <img src="images/derecha1.gif" alt="abeja-andando" />
+      <img src="images/derecha2.gif" alt="conejo-rosa-girando" />
+      <img src="images/derecha3.gif" alt="bicho-naranja" />
+    </div>
 
-    <main>
-      <section class="introduccion">
-        <article class="historia-tamagotchi">
-          <h2 class="titulo-secundario">Historia de Tamagotchi:</h2>
+    <div class="contenedor-titulo">
+      <h1 class="titulo-principal">TEST</h1>
+    </div>
+  </header>
 
-          <p><strong>Tamagotchi salió a la venta el 23 de noviembre de 1996.</strong></p>
+  <main>
+    <section class="seccion-test">
+      <article class="test-tamagotchi">
+        <h2 class="titulo-test">TEST TAMAGOTCHI</h2>
 
-          <p>
-            Esta «mascota de juguete portátil» se puso muy de moda
-            principalmente entre las adolescentes.
-          </p>
+        <form action="#" method="post" class="formulario-tamagotchi">
+          <fieldset class="grupo-datos">
+            <legend>Datos del cuidador</legend>
 
-          <p>
-            Más tarde, en 2004, regresó con <em>Tamagotchi Connection</em>, un
-            dispositivo con comunicación por infrarrojos integrada al que
-            siguieron una serie de modelos con nuevas funciones y formas de
-            jugar. Desde 1996, se han vendido alrededor de 91 millones de
-            unidades en todo el mundo (hasta marzo de 2023).
-          </p>
+            <label for="email">Introduce tu correo electrónico para recibir el resultado:</label>
+            <input type="email" id="email" name="email" required />
 
-          <p>
-            En julio de 2023 salió a la venta en todo el mundo <em>Tamagotchi Uni</em>,
-            el primer modelo con wifi incorporada que permite conocer a
-            personajes Tamagotchi de todas partes en un mundo virtual llamado
-            «Tamaverso».
-          </p>
+            <label for="fecha">¿Cuándo compraste tu primer Tamagotchi?</label>
+            <input type="date" id="fecha" name="fecha" />
 
-          <p>
-            Tanto entre quienes recuerdan viejos tiempos jugando con su mascota
-            virtual como entre quienes la descubren ahora, la entrañable marca
-            Tamagotchi sigue haciéndose hueco en los corazones de sus
-            seguidores.
-          </p>
+            <label for="dni">Introduce tu DNI (obligatorio 8 números y una letra):</label>
+            <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]{1}"
+              title="Debe tener 8 números y una letra al final. Ejemplo: 12345678A" required />
+          </fieldset>
 
-          <div class="imagen1">
-            <img src="images/imagen-introduccion.jpg" alt="Tamagotchi" class="imagen-introduccion" />
-            <sup class="pie-imagen">In my dreams . . .</sup>
-          </div>
-        </article>
-      </section>
+          <fieldset class="grupo-estilo">
+            <legend>Tu estilo de cuidado</legend>
 
-      <aside>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p><p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-      </aside>
-    </main>
+            <label for="paciencia">¿Qué nivel de paciencia tienes con tu Tamagotchi?</label>
+            <input type="range" id="paciencia" name="paciencia" min="1" max="10" value="5" />
 
-    <footer>
+            <label for="tamago-num">¿Cuántos Tamagotchis cuidas al mismo tiempo?</label>
+            <input type="number" id="tamago-num" name="tamago-num" min="1" max="10" required />
+
+            <label for="hora">¿A qué hora sueles utilizar más a tu Tamagotchi?</label>
+            <input type="time" id="hora" name="hora" />
+          </fieldset>
+
+          <fieldset class="grupo-personalidad">
+            <legend>Personalidad Tamagotchi</legend>
+
+            <label>¿Qué tipo de Tamagotchi crees que serías?</label>
+            <select name="tipo" class="selector-tipo">
+              <option value="">Selecciona una opción</option>
+              <option value="divertido">
+                El divertido (siempre jugando)
+              </option>
+              <option value="responsable">
+                El responsable (nunca lo dejas morir)
+              </option>
+              <option value="dramatico">
+                El dramático (cada beep es una tragedia)
+              </option>
+              <option value="soñador">
+                El soñador (vive en su propio mundo pixelado)
+              </option>
+            </select>
+
+            <label for="historia">Describe una anécdota con tu Tamagotchi:</label>
+            <textarea id="historia" name="historia" rows="4"
+              placeholder="Cuéntanos una historia divertida o trágica..."></textarea>
+          </fieldset>
+
+          <button type="submit" class="boton-enviar">
+            Enviar mi test Tamagotchi
+          </button>
+        </form>
+      </article>
+    </section>
+
+    <aside>
       <p>prueba</p>
       <p>prueba</p>
-    </footer>
-  </body>
+      <p>prueba</p>
+      <p>prueba</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>prueba</p>
+    <p>prueba</p>
+  </footer>
+</body>
+
 </html>

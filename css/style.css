@@ -130,6 +130,13 @@ aside {
 
 /* FONDO DE LA PÁGINA Y ELEMENTOS GRÁFICOS */
 
+.personajes {
+  background-image: url("../images/fondo-index.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
 .index {
   background-image: url("../images/fondo-index.png");
   background-size: cover;
@@ -279,3 +286,61 @@ textarea:valid {
   background-color: #00274E;
   transform: scale(1.05);
 }
+
+/* ESTILOS DE LA TABLA PERSONAJES */
+
+  table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid #00274E;
+    background-color: #ffffff;
+  }
+
+  th, td {
+    border: 1px solid #FEF102;
+    padding: 8px 10px;
+    text-align: center;
+    color: #00274E;
+  }
+
+  th {
+    background-color: #00274E;
+    color: #FEF102;
+  }
+
+  th[colspan="10"] {
+    background-color: #00274E;
+    color: #FEF102;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    border: 2px solid #FEF102;
+    padding: 12px;
+  }
+
+  /* Subencabezados */
+  tr:nth-child(2) th,
+  tr:nth-child(3) th {
+    background-color: #FEF102;
+    color: #00274E;
+    border: 1px solid #00274E;
+    font-weight: bold;
+  }
+
+  /* Márgenes extra en las celdas principales */
+  td[colspan="2"],
+  td[colspan="3"] {
+    padding: 10px;
+  }
+
+   /* Clases específicas para imágenes de Tamagotchi */
+  .arte-tamagotchi {
+    max-width: 85px;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .sprite-tamagotchi {
+    max-width: 65px;
+    height: auto;
+  }

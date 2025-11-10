@@ -330,9 +330,10 @@ th[colspan="10"] {
   letter-spacing: 1px;
   border: 2px solid #FEF102;
   padding: 12px;
+  font-family: "Starshines";
 }
 
-/* Subencabezados */
+/* SUBENCABEZADOS TABLA */
 tr:nth-child(2) th,
 tr:nth-child(3) th {
   background-color: #FEF102;
@@ -341,13 +342,33 @@ tr:nth-child(3) th {
   font-weight: bold;
 }
 
-/* Márgenes extra en las celdas principales */
-td[colspan="2"],
-td[colspan="3"] {
-  padding: 10px;
+/* CLASES DE LAS GENERACIONES DE LA TABLA PERSONAJES */
+.generacion-original {
+  background-color: #FFF7CC; /* amarillo pálido */
 }
 
-/* Clases específicas para imágenes de Tamagotchi */
+.generacion-connection {
+  background-color: #D6F5FF; /* celeste claro */
+}
+
+.generacion-id {
+  background-color: #F6E1FF; /* lavanda */
+}
+
+.generacion-mix {
+  background-color: #D8FFD6; /* verde claro */
+}
+
+/* COLOREAR CELDAS GENERO */
+.genero-masculino {
+  background-color: #B3D9FF; /* azul suave */
+}
+
+.genero-femenino {
+  background-color: #FFD6E7; /* rosa claro */
+}
+
+/* CLASES DE LAS IMÁGENES DE LA TABLA TAMAGOTCHI */
 .arte-tamagotchi {
   width: 85px;
   height: 85px;

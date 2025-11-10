@@ -8,10 +8,21 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "MADE TOMMY Regular";
+  src: url("fonts/MADE TOMMY Regular.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
 body,
 button,
 a {
   cursor: url("../images/cursor.cur"), auto;
+}
+
+body {
+  font-family: "MADE TOMMY Regular", sans-serif;
 }
 
 /* HEADER (lo que es la barra como tal) */
@@ -222,7 +233,8 @@ textarea:focus {
 
 input[type="range"] {
   width: 80%;
-  accent-color: #00274E; /* Pone de ese color la barra */
+  accent-color: #00274E;
+  /* Pone de ese color la barra */
 }
 
 textarea {
@@ -289,58 +301,60 @@ textarea:valid {
 
 /* ESTILOS DE LA TABLA PERSONAJES */
 
-  table {
-    width: 95%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    border: 2px solid #00274E;
-    background-color: #ffffff;
-  }
+table {
+  width: 1000px;
+  height: 500px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px solid #00274E;
+  background-color: #ffffff;
+}
 
-  th, td {
-    border: 1px solid #FEF102;
-    padding: 8px 10px;
-    text-align: center;
-    color: #00274E;
-  }
+th,
+td {
+  border: 1px solid #FEF102;
+  padding: 8px 10px;
+  text-align: center;
+  color: #00274E;
+}
 
-  th {
-    background-color: #00274E;
-    color: #FEF102;
-  }
+th {
+  background-color: #00274E;
+  color: #FEF102;
+}
 
-  th[colspan="10"] {
-    background-color: #00274E;
-    color: #FEF102;
-    font-size: 1.3em;
-    letter-spacing: 1px;
-    border: 2px solid #FEF102;
-    padding: 12px;
-  }
+th[colspan="10"] {
+  background-color: #00274E;
+  color: #FEF102;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  border: 2px solid #FEF102;
+  padding: 12px;
+}
 
-  /* Subencabezados */
-  tr:nth-child(2) th,
-  tr:nth-child(3) th {
-    background-color: #FEF102;
-    color: #00274E;
-    border: 1px solid #00274E;
-    font-weight: bold;
-  }
+/* Subencabezados */
+tr:nth-child(2) th,
+tr:nth-child(3) th {
+  background-color: #FEF102;
+  color: #00274E;
+  border: 1px solid #00274E;
+  font-weight: bold;
+}
 
-  /* Márgenes extra en las celdas principales */
-  td[colspan="2"],
-  td[colspan="3"] {
-    padding: 10px;
-  }
+/* Márgenes extra en las celdas principales */
+td[colspan="2"],
+td[colspan="3"] {
+  padding: 10px;
+}
 
-   /* Clases específicas para imágenes de Tamagotchi */
-  .arte-tamagotchi {
-    max-width: 85px;
-    height: auto;
-    border-radius: 6px;
-  }
+/* Clases específicas para imágenes de Tamagotchi */
+.arte-tamagotchi {
+  width: 85px;
+  height: 85px;
+  border-radius: 6px;
+}
 
-  .sprite-tamagotchi {
-    max-width: 65px;
-    height: auto;
-  }
+.sprite-tamagotchi {
+  width: 50px;
+  height: 50px;
+}

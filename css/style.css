@@ -15,6 +15,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Starbim";
+  src: url("fonts/Starbim.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
 body,
 button,
 a {
@@ -23,12 +30,13 @@ a {
 
 body {
   font-family: "MADE TOMMY Regular", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* HEADER (lo que es la barra como tal) */
 
 header::before {
-
   /* Es obligatorio para que el pseudoelemento exista
    No muestra texto, simplemente le dice al navegador “crea el bloque” */
   content: "";
@@ -104,23 +112,26 @@ nav a:hover {
   color: #00264a;
 }
 
-/* CONTENEDOR DEL TÍTULO */
-
+/* CONTENEDOR DEL TÍTULO (BANNER) */
 .contenedor-titulo {
-  position: static;
-  /* muy importante: evita que herede el fixed */
-  text-align: center;
-  margin-top: 120px;
-  margin-bottom: 50px;
+  width: 100%; 
+  background: rgb(0, 39, 78); 
+  border-top: 2px solid #fef102;
+  border-bottom: 2px solid #fef102; 
+  box-shadow: 0 0 15px #00274e; 
+  padding: 25px 15px;
+  margin: 100px auto auto auto;
+  text-align: center; 
+  backdrop-filter: blur(6px); 
 }
 
 /* TÍTULO PRINCIPAL */
-
 .titulo-principal {
-  font-family: "Starshines";
+  font-family: "Starbim";
   font-size: 60px;
   color: #fef102;
   margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); 
 }
 
 /* MAIN, SECTION Y ASIDE DE LA PÁGINA */
@@ -142,7 +153,7 @@ aside {
 /* FONDO DE LA PÁGINA Y ELEMENTOS GRÁFICOS */
 
 .personajes {
-  background-image: url("../images/fondo-index.png");
+  background-image: url("../images/fondo-personajes.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -172,7 +183,7 @@ aside {
 
 .formulario-tamagotchi {
   background-color: #fef102;
-  border: 2px solid #00274E;
+  border: 2px solid #00274e;
   border-radius: 12px;
   padding: 20px 30px;
   margin: 20px auto;
@@ -191,7 +202,7 @@ aside {
 
 /* AGRUPACIONES FORMULARIO*/
 fieldset {
-  border: 2px dashed #00274E;
+  border: 2px dashed #00274e;
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 15px;
@@ -199,7 +210,7 @@ fieldset {
 
 legend {
   font-weight: bold;
-  color: #00274E;
+  color: #00274e;
   font-size: 1.1em;
   padding: 0 8px;
 }
@@ -217,24 +228,24 @@ textarea {
   width: 100%;
   padding: 8px;
   border-radius: 8px;
-  border: 1px solid #00274E;
+  border: 1px solid #00274e;
   font-size: 1em;
-  background-color: #00274E;
+  background-color: #00274e;
   transition: border-color 0.3s;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #00274E;
+  border-color: #00274e;
   outline: none;
   color: white;
 }
 
 input[type="range"] {
   width: 80%;
-  accent-color: #00274E;
-  /* Pone de ese color la barra */
+  accent-color: #00274e;
+  /* Pone de ese color la barra del formulario */
 }
 
 textarea {
@@ -249,7 +260,7 @@ textarea {
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 1em;
-  background-color: #00274E;
+  background-color: #00274e;
   color: white;
   transition: border-color 0.3s, background-color 0.3s;
 }
@@ -274,15 +285,15 @@ select:valid,
 textarea:focus,
 textarea:valid {
   color: white;
-  background-color: #00274E;
-  border-color: #00274E;
+  background-color: #00274e;
+  border-color: #00274e;
   outline: none;
 }
 
 /* BOTÓN DE ENVÍO FORMULARIO */
 .boton-enviar {
   display: block;
-  background-color: #00274E;
+  background-color: #00274e;
   border: none;
   border-radius: 10px;
   padding: 10px 25px;
@@ -295,8 +306,50 @@ textarea:valid {
 }
 
 .boton-enviar:hover {
-  background-color: #00274E;
+  background-color: #00274e;
   transform: scale(1.05);
+}
+
+/* TARJETA INTRODUCCIÓN PÁGINA PERSONAJES */
+
+.tarjeta-introduccion {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  border: 2px solid #00274e;
+  box-shadow: 0 0 15px rgba(0, 39, 78, 0.4);
+  padding: 20px;
+  width: 1000px;
+  margin: 40px 100px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: justify;
+}
+
+.imagen-introduccion-tarjeta {
+  width: 350px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #00274e;
+}
+
+.texto-tarjeta {
+  color: #00274e;
+  font-family: "MADE TOMMY Regular";
+}
+
+.texto-tarjeta h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #00274e;
+}
+
+.texto-tarjeta p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* ESTILOS DE LA TABLA PERSONAJES */
@@ -306,66 +359,102 @@ table {
   height: 500px;
   margin: 20px auto;
   border-collapse: collapse;
-  border: 2px solid #00274E;
+  border: 2px solid #00274e;
   background-color: #ffffff;
 }
 
 th,
 td {
-  border: 1px solid #FEF102;
+  border: 1px solid #fef102;
   padding: 8px 10px;
   text-align: center;
-  color: #00274E;
+  color: #00274e;
+  vertical-align: middle;
 }
 
 th {
-  background-color: #00274E;
-  color: #FEF102;
+  background-color: #00274e;
+  color: #fef102;
 }
 
 th[colspan="10"] {
-  background-color: #00274E;
-  color: #FEF102;
+  background-color: #00274e;
+  color: #fef102;
   font-size: 1.3em;
   letter-spacing: 1px;
-  border: 2px solid #FEF102;
+  border: 2px solid #fef102;
   padding: 12px;
-  font-family: "Starshines";
 }
 
 /* SUBENCABEZADOS TABLA */
 tr:nth-child(2) th,
 tr:nth-child(3) th {
-  background-color: #FEF102;
-  color: #00274E;
-  border: 1px solid #00274E;
+  background-color: #fef102;
+  color: #00274e;
+  border: 1px solid #00274e;
   font-weight: bold;
 }
 
+/* TFOOT */
+tfoot td {
+  text-align: justify;
+  padding: 15px;
+  background-color: #fef102;
+}
+
+/* TARJETA DE FONDO PARA LA TABLA */
+.tarjeta-tabla {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px); 
+  border: 2px solid #00274e; 
+  border-radius: 20px;
+  padding: 20px 25px;
+  width: fit-content;
+  margin: 30px auto;
+  box-shadow: 0 0 15px rgba(0, 39, 78, 0.4); 
+}
+
 /* CLASES DE LAS GENERACIONES DE LA TABLA PERSONAJES */
+
+/* Generación original */
 .generacion-original {
-  background-color: #FFF7CC; /* amarillo pálido */
+  background-color: #fdfd96;
 }
 
+/* Generación connection */
 .generacion-connection {
-  background-color: #D6F5FF; /* celeste claro */
+  background-color: #d6f5ff;
 }
 
+.generacion-connection2 {
+  background-color: #d6f5ff79;
+}
+
+/* Generación id */
 .generacion-id {
-  background-color: #F6E1FF; /* lavanda */
+  background-color: #f6e1ff;
 }
 
+.generacion-id2 {
+  background-color: #f6e1ff77;
+}
+
+/* Generación mix */
 .generacion-mix {
-  background-color: #D8FFD6; /* verde claro */
+  background-color: #d8ffd6;
+}
+
+.generacion-mix2 {
+  background-color: #d8ffd671;
 }
 
 /* COLOREAR CELDAS GENERO */
 .genero-masculino {
-  background-color: #B3D9FF; /* azul suave */
+  background-color: #b3d9ff;
 }
 
 .genero-femenino {
-  background-color: #FFD6E7; /* rosa claro */
+  background-color: #ffd6e7;
 }
 
 /* CLASES DE LAS IMÁGENES DE LA TABLA TAMAGOTCHI */

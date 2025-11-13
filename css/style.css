@@ -153,15 +153,15 @@ aside {
 /* FONDO DE LA PÁGINA Y ELEMENTOS GRÁFICOS */
 
 .personajes {
-  background-image: url("../images/fondo-personajes.jpg");
-  background-size: cover;
+  background-image: url("../images/fondo.gif");
+  background-size: auto;
   background-position: center;
   background-repeat: repeat;
 }
 
 .index {
-  background-image: url("../images/fondo-index.png");
-  background-size: cover;
+  background-image: url("../images/fondo.gif");
+  background-size: auto;
   background-position: center;
   background-repeat: repeat;
 }

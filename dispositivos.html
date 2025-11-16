@@ -1,82 +1,343 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Página dispositivos</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body class="dispositivos">
-    <header>
-      <div class="gifs-header izquierda-gif">
-        <img src="images/izquierda1.gif" alt="bichito-verde" />
-        <img src="images/izquierda2.gif" alt="naranjita-andando" />
-        <img src="images/izquierda3.gif" alt="azul-rodando" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Página dispositivos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-      <nav>
+<body class="dispositivos">
+  <header>
+    <div class="gifs-header izquierda-gif">
+      <img src="images/izquierda1.gif" alt="bichito-verde" />
+      <img src="images/izquierda2.gif" alt="naranjita-andando" />
+      <img src="images/izquierda3.gif" alt="azul-rodando" />
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="dispositivos.html">Dispositivos</a></li>
+        <li><a href="test.html">Test</a></li>
+      </ul>
+    </nav>
+
+    <div class="gifs-header derecha-gif">
+      <img src="images/derecha1.gif" alt="abeja-andando" />
+      <img src="images/derecha2.gif" alt="conejo-rosa-girando" />
+      <img src="images/derecha3.gif" alt="bicho-naranja" />
+    </div>
+
+    <div class="contenedor-titulo">
+      <h1 id="titulo-pagina" class="titulo-principal">DISPOSITIVOS</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="secion-dispositivos">
+      <article class="tarjeta-index">
+        <h2>
+          Tamagotchi: un viaje por sus dispositivos a través del tiempo
+        </h2>
+        <p>
+          Bienvenido, valiente cuidador digital. Prepárate para embarcarte en
+          un <em>viaje a través de la historia de los Tamagotchis</em>, desde
+          los más primitivos hasta los más modernos y sociales. Aquí
+          descubrirás cómo evolucionaron estos pequeños compañeros que caben
+          en la palma de la mano, sus mini juegos, sus
+          <strong>rarezas y sus travesuras</strong>.
+        </p>
+      </article>
+
+      <article class="tarjeta-index">
+        <h2 class="titulo-normal"><mark>LOS TAMAGOTCHIS CLÁSICOS (AÑOS 90)</mark></h2>
+        <h3>TAMAGOTCHI ORIGINAL (1996)</h3>
+        <hr>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="personajes.html">Personajes</a></li>
-          <li><a href="dispositivos.html">Dispositivos</a></li>
-          <li><a href="test.html">Test</a></li>
+          <li>Primera versión de la mascota virtual portátil.</li>
+          <li>Pantalla monocromo, tres botones, puro cuidado básico.</li>
+          <li>
+            La sensación de responsabilidad era <strong>real</strong>… ¡y
+            también el <em>drama de sus “muertes virtuales”</em>!
+          </li>
         </ul>
-      </nav>
+        <strong>SUBMODELOS CURIOSOS:</strong>
+        <ul class="sublista-square">
+          <li>
+            <strong>TamaPet:</strong> un Tamagotchi que podía “caminar” en su pantalla y
+            mostraba emociones básicas.
+          </li>
+          <li>
+            <strong>TamaSitter:</strong> permitía “cuidar” múltiples Tamagotchis y que
+            interactuaran entre sí.
+          </li>
+        </ul>
 
-      <div class="gifs-header derecha-gif">
-        <img src="images/derecha1.gif" alt="abeja-andando" />
-        <img src="images/derecha2.gif" alt="conejo-rosa-girando" />
-        <img src="images/derecha3.gif" alt="bicho-naranja" />
-      </div>
+        <h3>TAMAGOTCHI ANGEL / DEVIL Y OTROS SPINS (FINALES DE LOS 90)</h3>
+        <hr>
+        <ul>
+          <li>Versiones temáticas con personajes y mini historias propias.</li>
+          <li>
+            Introducían humor y “personalidad” extra: ¿angelito o diablillo?
+          </li>
+          <li>Mini juegos limitados, pero llenos de diversión retro.</li>
+        </ul>
 
-      <div class="contenedor-titulo">
-        <h1 class="titulo-principal">DISPOSITIVOS</h1>
-      </div>
-    </header>
-
-    <main>
-      <section class="secion-dispositivos">
-        <article class="dispositivos">
-          <h2>Dispositivos Tamagotchi:</h2>
-          <ul class="lista-tamagotchi-dispositivos">
-            <li>Tamagotchi (1996) — original</li>
-            <li>Tamagotchi Angel (1997)</li>
-            <li>Tamagotchi Connection V1 (2004)</li>
-            <li>Tamagotchi Connection V2 (2005)</li>
-            <li>Tamagotchi Plus Color (2008)</li>
-            <li>Tamagotchi iD (2009)</li>
-            <li>Tamagotchi 4U (2014)</li>
-            <li>Tamagotchi Pix (2021)</li>
-            <li>Tamagotchi Smart (2021)</li>
-            <li>Tamagotchi Uni (2023)</li>
-            <li>Tamagotchi Paradise (2025)</li>
+        <details>
+          <summary>CURIOSIDADES DE LOS CLÁSICOS</summary>
+          <ul>
+            <li>
+              Algunos Tamagotchis originales necesitaban que los alimentaras
+              hasta 5 veces al día, ¡si no, drama total!
+            </li>
+            <li>
+              Existían modelos exclusivos para Japón que nunca salieron
+              oficialmente a otros mercados.
+            </li>
+            <li>
+              Muchos cuidadores olvidaban apagar la alarma, despertando con
+              sonidos “estridentes” de su mascota virtual.
+            </li>
           </ul>
-        </article>
-      </section>
+        </details>
+        <div class="contenedor-imagenes">
+          <div class="contenedor-imagen">
+            <img src="images/tamagotchi-original.jpg" alt="Tamagotchi Original" class="imagen-introduccion" />
+          </div>
+          <div class="contenedor-imagen">
+            <img
+              src="images/tamagotchi-angel.jpg"
+              alt="Tamagotchi Angel"
+              class="imagen-introduccion"
+            />
+          </div>
+        </div>
+      </article>
 
-      <aside>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-      </aside>
-    </main>
+      <article class="tarjeta-index">
+        <h2 class="titulo-normal"><mark>LA ERA DE LA CONEXIÓN (2004-2010)</mark></h2>
+        <h3>TAMAGOTCHI CONNECTION V1-V3</h3>
+        <hr>
+        <ul>
+          <li>
+            Comunicación por infrarrojos: tus Tamagotchis podían hacer<strong>
+              amigos, casarse y tener hijos</strong
+            >.
+          </li>
+          <li>Nuevos mini juegos y actividades sociales digitales.</li>
+          <li>Pantalla monocromo en V1 y color en versiones posteriores.</li>
+        </ul>
+        <strong>SUBMODELOS IMPORTANTES:</strong>
+        <ul class="sublista-circle">
+          <li><strong>Connection V1:</strong> el clásico que introdujo la comunicación básica.</li>
+          <li>
+            <strong>Connection V2:</strong> más colores, más interacción y nuevos mini juegos.
+          </li>
+          <li>
+            <strong>Connection V3:</strong> mundo virtual, nuevas relaciones y eventos
+            especiales.
+          </li>
+        </ul>
 
-    <footer>
-      <p>prueba</p>
-      <p>prueba</p>
-    </footer>
-  </body>
+        <h3>TAMAGOTCHI MUSIC & IDOL (2006-2007)</h3>
+        <hr>
+        <ul>
+          <li>Los Tamagotchis podían convertirse en estrellas pop.</li>
+          <li>
+            Aprendían canciones y bailes,
+            <em>¡el primer Tamagotchi que tenía ritmo!</em>
+          </li>
+        </ul>
+
+        <details>
+          <summary>DATOS CURIOSOS DE LA ERA CONNECTION</summary>
+          <ul>
+            <li>
+              Algunos Tamagotchis podían “visitar” a otros y traer regalos
+              sorpresa.
+            </li>
+            <li>
+              Si descuidabas la socialización, tu Tamagotchi podía
+              deprimirse virtualmente.
+            </li>
+            <li>
+              Hubo competiciones reales de Tamagotchis: quién tenía la mejor
+              mascota, los mejores mini juegos ganados, etc.
+            </li>
+          </ul>
+        </details>
+        <div class="contenedor-imagenes">
+          <div class="contenedor-imagen">
+            <img src="images/tamagotchi-connection.jpg" alt="Tamagotchi Connection" class="imagen-introduccion" />
+          </div>
+          <div class="contenedor-imagen">
+            <img
+              src="images/tamagotchi-music-star.jpg"
+              alt="Tamagotchi Music Star"
+              class="imagen-introduccion"
+            />
+          </div>
+        </div>
+      </article>
+
+      <article class="tarjeta-index">
+        <h2 class="titulo-normal"><mark>COLOR Y SOCIALIZACIÓN (2010-2020)</mark></h2>
+        <h3>TAMAGOTCHI FRIENDS (2013)</h3>
+        <hr>
+        <ul>
+          <li>
+            <strong>Pantalla a color</strong>, <em>botones táctiles</em>,
+            comunicación con amigos y envío de regalos.
+          </li>
+          <li>Mini juegos mucho más interactivos y visuales.</li>
+          <li>
+            Introdujo personalización avanzada de la casa de tu Tamagotchi.
+          </li>
+        </ul>
+        <strong>SUBMODELOS DESTACADOS:</strong>
+        <ul class="sublista-disc">
+          <li><strong>Friends V1:</strong> la versión básica color y comunicación.</li>
+          <li>
+            <strong>Friends V2:</strong> más mini juegos, nuevos personajes y logros
+            especiales.
+          </li>
+          <li>
+            <strong>Friends TamaTown:</strong> integración con un mundo virtual tipo “ciudad
+            digital”.
+          </li>
+        </ul>
+
+        <h3>TAMAGOTCHI P’S (2012-2014)</h3>
+        <hr>
+        <ul>
+          <li>
+            Pantalla táctil y expansión tipo “cartucho” con nuevos
+            personajes y juegos.
+          </li>
+          <li>
+            Permitía personalización avanzada y mini juegos en profundidad.
+          </li>
+        </ul>
+
+        <details>
+          <summary>CURIOSIDADES DE LA ERA FRIENDS</summary>
+          <ul>
+            <li>
+              Algunos Tamagotchis podían “enamorarse” de otros de manera
+              virtual y tener hijos digitales.
+            </li>
+            <li>
+              Los mini juegos eran tan adictivos que muchos cuidadores
+              olvidaban hasta su café de la mañana.
+            </li>
+            <li>
+              Había eventos especiales dentro del dispositivo, ¡como fiestas
+              de cumpleaños de Tamagotchis!
+            </li>
+          </ul>
+        </details>
+        <div class="contenedor-imagenes">
+          <div class="contenedor-imagen">
+            <img src="images/tamagotchi-friends.jpg" alt="Tamagotchi Friends" class="imagen-introduccion" />
+          </div>
+          <div class="contenedor-imagen">
+            <img
+              src="images/tamagotchi-ps.jpg"
+              alt="Tamagotchi P's"
+              class="imagen-introduccion"
+            />
+          </div>
+        </div>
+      </article>
+
+      <article class="tarjeta-index">
+        <h2 class="titulo-normal"><mark>LA ERA DEL TAMAVERSO Y WIFI (2020 EN ADELANTE)</mark></h2>
+        <h3>TAMAGOTCHI UNI (2023)</h3>
+        <hr>
+        <ul>
+          <li>
+            <strong>Conexión global vía WiFi</strong>: tus Tamagotchis pueden
+            conocer a otros en cualquier parte del mundo.
+          </li>
+          <li>
+            Eventos, coleccionables digitales, logros y aventuras infinitas.
+          </li>
+          <li>Interacción con mundos virtuales: el Tamaverso.</li>
+        </ul>
+        <strong>SUBMODELOS Y FUNCIONES CLAVE:</strong>
+        <ul class="sublista-square">
+          <li><strong>Uni básico:</strong> el dispositivo portátil que conecta al Tamaverso.</li>
+          <li><strong>Uni con logros:</strong> seguimiento de progreso y coleccionables digitales.</li>
+          <li>
+            <strong>Uni eventos especiales:</strong> mini juegos y competencias en línea.
+          </li>
+        </ul>
+
+        <details>
+          <summary>CURIOSIDADES DE LA ERA TAMAVERSO</summary>
+          <ul>
+            <li>
+              Los Tamagotchis Uni pueden tener más amigos digitales que tú en
+              toda tu vida.
+            </li>
+            <li>
+              Hay logros que solo se consiguen interactuando con otros
+              Tamagotchis alrededor del mundo.
+            </li>
+            <li>
+              Tu Tamagotchi puede asistir a fiestas virtuales y “viajar” a
+              mundos que nunca imaginarías.
+            </li>
+          </ul>
+        </details>
+        <img
+          src="images/tamagotchi-uni.jpg"
+          alt="Curiosidades de la era Tamaverso"
+          class="imagen-introduccion imagen-curiosidades"
+        />
+      </article>
+
+      <article class="tarjeta-index">
+        <h2 class="titulo-normal"><mark>COMPARATIVA RÁPIDA POR DÉCADAS</mark></h2>
+        <ol class="lista-comparativa">
+          <li>
+            <strong>90s:</strong> Monocromo, 3 botones, cuidado básico y drama
+            épico de muertes virtuales.
+          </li>
+          <li>
+            <strong>2000s:</strong> Conexión infrarrojos, mini juegos,
+            relaciones virtuales y primeros mundos digitales.
+          </li>
+          <li>
+            <strong>2010s:</strong> Pantalla color, más socialización, regalos,
+            personalización y mini mundos virtuales.
+          </li>
+          <li>
+            <strong>2020s:</strong> WiFi, Tamaverso, logros, coleccionables y
+            eventos globales.
+          </li>
+        </ol>
+      </article>
+    </section>
+
+    <aside id="noticias-destacadas" class="noticias tarjeta-lateral">
+      <h2>Noticias destacadas</h2>
+      <ul class="lista-noticias">
+        <li><a href="#">Anunciado el nuevo "Tamagotchi Paradise" para 2025</a></li>
+        <li><a href="#">Guía completa para conseguir a Mametchi en Tamagotchi Uni</a></li>
+        <li><a href="#">Los fans recrean el primer Tamagotchi en 3D</a></li>
+        <li><a href="#">Evento de colaboración: ¡Godzilla llega al Tamaverso!</a></li>
+        <li><a href="#">¿Vale la pena el Tamagotchi Smart en 2025? Análisis.</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>MARTA GONZÁLEZ GONZÁLEZ 1ºDAM; LENGUAJE DE MARCA</p>
+  </footer>
+</body>
+
 </html>

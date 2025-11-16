@@ -1,706 +1,547 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Página Personajes</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body class="personajes">
-    <header>
-      <div class="gifs-header izquierda-gif">
-        <img src="images/izquierda1.gif" alt="bichito-verde" />
-        <img src="images/izquierda2.gif" alt="naranjita-andando" />
-        <img src="images/izquierda3.gif" alt="azul-rodando" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Página Personajes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="personajes.html">Personajes</a></li>
-          <li><a href="dispositivos.html">Dispositivos</a></li>
-          <li><a href="test.html">Test</a></li>
-        </ul>
-      </nav>
+<body class="personajes">
+  <header>
+    <div class="gifs-header izquierda-gif">
+      <img src="images/izquierda1.gif" alt="bichito-verde" />
+      <img src="images/izquierda2.gif" alt="naranjita-andando" />
+      <img src="images/izquierda3.gif" alt="azul-rodando" />
+    </div>
 
-      <div class="gifs-header derecha-gif">
-        <img src="images/derecha1.gif" alt="abeja-andando" />
-        <img src="images/derecha2.gif" alt="conejo-rosa-girando" />
-        <img src="images/derecha3.gif" alt="bicho-naranja" />
-      </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="dispositivos.html">Dispositivos</a></li>
+        <li><a href="test.html">Test</a></li>
+      </ul>
+    </nav>
 
-      <div class="contenedor-titulo">
-        <h1 class="titulo-principal">PERSONAJES</h1>
-      </div>
-    </header>
+    <div class="gifs-header derecha-gif">
+      <img src="images/derecha1.gif" alt="abeja-andando" />
+      <img src="images/derecha2.gif" alt="conejo-rosa-girando" />
+      <img src="images/derecha3.gif" alt="bicho-naranja" />
+    </div>
 
-    <main>
-      <section class="secion-personajes">
-        <article class="tarjeta-introduccion">
-          <div class="texto-tarjeta">
-            <h2>¡CONOCE A TODOS LOS TAMAGOTCHI!</h2>
-            <p>
-              ¡Bienvenido a la mini galería de los personajes Tamagotchi! Puede
-              encontrar aquí desde los clásicos hasta los más modernos del
-              Tamaverse. Aprende sus nombres, características, género y secretos
-              para cuidarlos como un verdadero experto ₍ᐢ._.ᐢ₎♡
-            </p>
-          </div>
-          <img
-            src="images/imagen-introduccion-personajes.jpeg"
-            alt="Imagen de introducción a los personajes"
-            class="imagen-introduccion-tarjeta"
-          />
-        </article>
+    <div class="contenedor-titulo">
+      <h1 id="titulo-pagina" class="titulo-principal">PERSONAJES</h1>
+    </div>
+  </header>
 
-        <article class="tabla-personajes">
-          <div class="tarjeta-tabla">
-            <table>
-              <thead>
-                <tr>
-                  <th colspan="10">TAMAGOTCHI ORIGINAL (1996 - 1997)</th>
-                </tr>
-                <tr>
-                  <th colspan="2" rowspan="2">GENERACIÓN</th>
-                  <th colspan="5">PERSONAJE</th>
-                  <th colspan="3" rowspan="2">CONDICIONES DE OBTENCIÓN</th>
-                </tr>
-                <tr>
-                  <th>NOMBRE</th>
-                  <th>ARTWORK</th>
-                  <th>SPRITE</th>
-                  <th>NOTAS</th>
-                  <th>GÉNERO</th>
-                </tr>
-              </thead>
+  <main>
+    <section class="secion-personajes">
+      <article class="tarjeta-introduccion">
+        <div class="texto-tarjeta">
+          <h2>¡CONOCE A TODOS LOS TAMAGOTCHI!</h2>
+          <p>
+            ¡Bienvenido a la mini galería de los personajes Tamagotchi! Puede
+            encontrar aquí desde los clásicos hasta los más modernos del
+            Tamaverse. Aprende sus nombres, características, género y secretos
+            para cuidarlos como un verdadero experto ₍ᐢ._.ᐢ₎♡
+          </p>
+        </div>
+        <img src="images/imagen-introduccion-personajes.jpeg" alt="Imagen de introducción a los personajes"
+          class="imagen-introduccion-tarjeta" />
+      </article>
 
-              <tbody>
-                <tr>
-                  <td colspan="2" rowspan="6" class="generacion-original">
-                    ORIGINAL
-                  </td>
-                  <td>Mametchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork1.webp"
-                      alt="Mametchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite1.jpeg"
-                      alt="Mametchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Personaje clásico y representativo del buen cuidado.</td>
-                  <td class="genero-masculino">Masculino</td>
-                  <td colspan="3">
-                    Aparece si se mantiene la felicidad, hambre y disciplina
-                    altas.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Mimitchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork2.webp"
-                      alt="Mimitchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite2.webp"
-                      alt="Mimitchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    Forma evolucionada con excelente cuidado y cero
-                    enfermedades.
-                  </td>
-                  <td class="genero-femenino">Femenino</td>
-                  <td colspan="3">
-                    Logrado con cuidado perfecto, sin negligencias.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Kuchipatchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork3.webp"
-                      alt="Kuchipatchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite3.jpeg"
-                      alt="Kuchipatchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Amigable, glotón y relajado.</td>
-                  <td rowspan="4" class="genero-masculino">Masculino</td>
-                  <td colspan="3">Cuidado medio, con algo de comida extra.</td>
-                </tr>
-                <tr>
-                  <td>Tarakotchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork4.webp"
-                      alt="Tarakotchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite4.png"
-                      alt="Tarakotchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Perezoso y bromista. Resultado de un cuidado regular.</td>
-                  <td colspan="3">
-                    Se obtiene con varios descuidos o baja disciplina.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Gozarutchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork5.webp"
-                      alt="Gozarutchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite5.png"
-                      alt="Gozarutchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Ninja sigiloso y reservado.</td>
-                  <td colspan="3">Cuidado irregular con algo de disciplina.</td>
-                </tr>
-                <tr>
-                  <td>Pochitchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork6.png"
-                      alt="Pochitchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite6.jpeg"
-                      alt="Pochitchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Parecido a un perrito blanco, leal y alegre.</td>
-                  <td colspan="3">
-                    Cuidado casi perfecto, con pocas enfermedades.
-                  </td>
-                </tr>
+      <article class="tabla-personajes">
+        <div class="tarjeta-tabla">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="10">TAMAGOTCHI ORIGINAL (1996 - 1997)</th>
+              </tr>
+              <tr>
+                <th colspan="2" rowspan="2">GENERACIÓN</th>
+                <th colspan="5">PERSONAJE</th>
+                <th colspan="3" rowspan="2">CONDICIONES DE OBTENCIÓN</th>
+              </tr>
+              <tr>
+                <th>NOMBRE</th>
+                <th>ARTWORK</th>
+                <th>SPRITE</th>
+                <th>NOTAS</th>
+                <th>GÉNERO</th>
+              </tr>
+            </thead>
 
-                <tr>
-                  <th colspan="10">
-                    TAMAGOTCHI CONNECTION (V<sub>1</sub>-V<sub>6</sub>, 2004 -
-                    2009)
-                  </th>
-                </tr>
-                <tr>
-                  <td colspan="2" rowspan="2" class="generacion-connection2">
-                    CONNECTION V<sub>1</sub> - V<sub>6</sub>
-                  </td>
-                  <td>Mametchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork7.webp"
-                      alt="Mametchi artwork connection"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite7.png"
-                      alt="Mametchi sprite connection"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Figura principal en todas las versiones.</td>
-                  <td rowspan="2" class="genero-masculino">Masculino</td>
-                  <td colspan="3">Cuidado excelente y disciplina alta.</td>
-                </tr>
-                <tr>
-                  <td>Kuchipatchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork8.png"
-                      alt="Kuchipatchi artwork connection"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite8.jpg"
-                      alt="Kuchipatchi sprite connection"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Glotón, relajado y bonachón.</td>
-                  <td colspan="3">Cuidado medio, alimentación frecuente.</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-connection">
-                    CONNECTION V<sub>2</sub> - V<sub>6</sub>
-                  </td>
-                  <td>Memetchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork9.webp"
-                      alt="Memetchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite9.jpeg"
-                      alt="Memetchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Con un rizo en la frente, amante de la moda.</td>
-                  <td rowspan="4" class="genero-femenino">Femenino</td>
-                  <td colspan="3">Cuidado alto con diversión constante.</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-connection2">
-                    CONNECTION V<sub>2</sub> - V<sub>5</sub>
-                  </td>
-                  <td>Violetchi / Furawatchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork10.png"
-                      alt="Violetchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite10.webp"
-                      alt="Violetchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Amante de las flores y la naturaleza.</td>
-                  <td colspan="3">Cuidado bueno, con afecto medio-alto.</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-connection">
-                    CONNECTION V<sub>4</sub> - V<sub>5</sub>
-                  </td>
-                  <td>Makiko</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork11.webp"
-                      alt="Makiko artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite11.webp"
-                      alt="Makiko sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Rival de Lovelitchi, muy presumida.</td>
-                  <td colspan="3">Cuidado alto y estilo elevado.</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-connection2">
-                    CONNECTION V<sub>5</sub> - V<sub>6</sub>
-                  </td>
-                  <td>Chamametchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork12.webp"
-                      alt="Chamametchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite12.png"
-                      alt="Chamametchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Hermana pequeña de Mametchi.</td>
-                  <td colspan="3">
-                    Cuidado medio-alto, con felicidad constante.
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-connection">
-                    CONNECTION V<sub>3</sub>
-                  </td>
-                  <td>Sebiretchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork13.webp"
-                      alt="Sebiretchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite13.webp"
-                      alt="Sebiretchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Con forma de cebolla, calmado.</td>
-                  <td rowspan="2" class="genero-masculino">Masculino</td>
-                  <td colspan="3">Cuidado regular y equilibrio emocional.</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-connection2">
-                    CONNECTION V<sub>4</sub>
-                  </td>
-                  <td>Yattatchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork14.webp"
-                      alt="Yattatchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite14.webp"
-                      alt="Yattatchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Payaso alegre y bromista.</td>
-                  <td colspan="3">Cuidado normal, buen nivel de diversión.</td>
-                </tr>
-                <tr>
-                  <th colspan="10">
-                    TAMAGOTCHI iD / iD L / P'S / 4U (2009 - 2014)
-                  </th>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-id">
-                    Tamagotchi iD / iD L
-                  </td>
-                  <td>Lovelitchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork15.webp"
-                      alt="Lovelitchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite15.webp"
-                      alt="Lovelitchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Estrella idol de los Tamagotchi modernos.</td>
-                  <td rowspan="2" class="genero-femenino">Femenino</td>
-                  <td colspan="3">
-                    Cuidado excelente, con alta felicidad y limpieza.
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" rowspan="2" class="generacion-id2">
-                    Tamagotchi iD / iD L / P's
-                  </td>
-                  <td>Meloditchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork16.webp"
-                      alt="Meloditchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite16.webp"
-                      alt="Meloditchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Amiga y compañera musical de Lovelitchi.</td>
-                  <td colspan="3">
-                    Cuidado excelente y vínculo alto con Lovelitchi.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Spacytchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork17.webp"
-                      alt="Spacytchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite17.webp"
-                      alt="Spacytchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Alien inteligente y algo travieso.</td>
-                  <td class="genero-masculino">Masculino</td>
-                  <td colspan="3">
-                    Cuidado medio con momentos de juego y exploración.
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-id">Tamagotchi P's</td>
-                  <td>Dokidokitchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork18.webp"
-                      alt="Dokidokitchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite18.jpg"
-                      alt="Dokidokitchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>De corazón amoroso, se sonroja fácilmente.</td>
-                  <td rowspan="2" class="genero-femenino">Femenino</td>
-                  <td colspan="3">
-                    Cuidado alto, sin negligencias ni enfermedades.
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-id2">Tamagotchi 4U</td>
-                  <td>Clulutchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork19.png"
-                      alt="Clulutchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite19.webp"
-                      alt="Clulutchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Guapa y carismática, amiga de Lovelitchi.</td>
-                  <td colspan="3">
-                    Cuidado muy bueno, alto nivel de diversión.
-                  </td>
-                </tr>
+            <tbody>
+              <tr>
+                <td colspan="2" rowspan="6" class="generacion-original columna-generacion">
+                  ORIGINAL
+                </td>
+                <td>Mametchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork1.webp" alt="Mametchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite1.jpeg" alt="Mametchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Personaje clásico y representativo del buen cuidado.
+                </td>
+                <td class="genero-masculino">Masculino</td>
+                <td colspan="3">
+                  Aparece si se mantiene la felicidad, hambre y disciplina
+                  altas.
+                </td>
+              </tr>
+              <tr>
+                <td>Mimitchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork2.webp" alt="Mimitchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite2.webp" alt="Mimitchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Forma evolucionada con excelente cuidado y cero
+                  enfermedades.
+                </td>
+                <td class="genero-femenino">Femenino</td>
+                <td colspan="3">
+                  Logrado con cuidado perfecto, sin negligencias.
+                </td>
+              </tr>
+              <tr>
+                <td>Kuchipatchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork3.webp" alt="Kuchipatchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite3.jpeg" alt="Kuchipatchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">Amigable, glotón y relajado.</td>
+                <td rowspan="4" class="genero-masculino">Masculino</td>
+                <td colspan="3">Cuidado medio, con algo de comida extra.</td>
+              </tr>
+              <tr>
+                <td>Tarakotchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork4.webp" alt="Tarakotchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite4.png" alt="Tarakotchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Perezoso y bromista. Resultado de un cuidado regular.
+                </td>
+                <td colspan="3">
+                  Se obtiene con varios descuidos o baja disciplina.
+                </td>
+              </tr>
+              <tr>
+                <td>Gozarutchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork5.webp" alt="Gozarutchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite5.png" alt="Gozarutchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">Ninja sigiloso y reservado.</td>
+                <td colspan="3">Cuidado irregular con algo de disciplina.</td>
+              </tr>
+              <tr>
+                <td>Pochitchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork6.png" alt="Pochitchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite6.jpeg" alt="Pochitchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Parecido a un perrito blanco, leal y alegre.
+                </td>
+                <td colspan="3">
+                  Cuidado casi perfecto, con pocas enfermedades.
+                </td>
+              </tr>
 
-                <tr>
-                  <th colspan="10">
-                    TAMAGOTCHI MIX / Meets / Smart / Uni (2016 - 2023)
-                  </th>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-mix">Tamagotchi Mix</td>
-                  <td>Nyatchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork20.webp"
-                      alt="Nyatchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite20.webp"
-                      alt="Nyatchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Gatita curiosa y amistosa.</td>
-                  <td rowspan="3" class="genero-femenino">Femenino</td>
-                  <td colspan="3">Cuidado medio, con interacción frecuente.</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-mix2">
-                    Tamagotchi Mix / Meets
-                  </td>
-                  <td>Ningyotchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork21.webp"
-                      alt="Ningyotchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite21.webp"
-                      alt="Ningyotchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Mitad sirena, mitad tamagotchi, amante del océano.</td>
-                  <td colspan="3">Cuidado medio-alto y afecto constante.</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-mix">
-                    Tamagotchi Meets / On
-                  </td>
-                  <td>Flowertchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork22.webp"
-                      alt="Flowertchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite22.webp"
-                      alt="Flowertchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Adora la jardinería y los ambientes tranquilos.</td>
-                  <td colspan="3">Cuidado bueno, requiere juego frecuente.</td>
-                </tr>
-                <tr>
-                  <td colspan="2" rowspan="2" class="generacion-mix2">
-                    Tamagotchi Smart
-                  </td>
-                  <td>Tamamatchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork25.webp"
-                      alt="Tamamatchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite23.webp"
-                      alt="Tamamatchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Moderno y enérgico, le encanta ejercitarse.</td>
-                  <td rowspan="2" class="genero-masculino">Masculino</td>
-                  <td colspan="3">
-                    Cuidado alto, necesita actividad constante.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Wiztchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork26.webp"
-                      alt="Wiztchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite24.webp"
-                      alt="Wiztchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Mago inteligente y bondadoso.</td>
-                  <td colspan="3">
-                    Cuidado medio, con interacciones mentales y aprendizaje.
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="generacion-mix">
-                    Tamagotchi Uni (2023)
-                  </td>
-                  <td>UniTchi</td>
-                  <td>
-                    <img
-                      src="images/artwork-tabla/artwork27.webp"
-                      alt="UniTchi artwork"
-                      class="arte-tamagotchi"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="images/sprite-tabla/sprite25.webp"
-                      alt="UniTchi sprite"
-                      class="sprite-tamagotchi"
-                    />
-                  </td>
-                  <td>Nuevo personaje central del Tamagotchi Uni.</td>
-                  <td class="genero-femenino">Femenino</td>
-                  <td colspan="3">
-                    Cuidado excelente, conectado con la red Tamaverse.
-                  </td>
-                </tr>
-              </tbody>
+              <tr>
+                <th colspan="10">
+                  TAMAGOTCHI CONNECTION (V<sub>1</sub>-V<sub>6</sub>, 2004 -
+                  2009)
+                </th>
+              </tr>
+              <tr>
+                <td colspan="2" rowspan="2" class="generacion-connection2 columna-generacion">
+                  CONNECTION V<sub>1</sub> - V<sub>6</sub>
+                </td>
+                <td>Mametchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork7.webp" alt="Mametchi artwork connection"
+                    class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite7.png" alt="Mametchi sprite connection"
+                    class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Figura principal en todas las versiones.
+                </td>
+                <td rowspan="2" class="genero-masculino">Masculino</td>
+                <td colspan="3">Cuidado excelente y disciplina alta.</td>
+              </tr>
+              <tr>
+                <td>Kuchipatchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork8.png" alt="Kuchipatchi artwork connection"
+                    class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite8.jpg" alt="Kuchipatchi sprite connection"
+                    class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">Glotón, relajado y bonachón.</td>
+                <td colspan="3">Cuidado medio, alimentación frecuente.</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-connection columna-generacion">
+                  CONNECTION V<sub>2</sub> - V<sub>6</sub>
+                </td>
+                <td>Memetchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork9.webp" alt="Memetchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite9.jpeg" alt="Memetchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Con un rizo en la frente, amante de la moda.
+                </td>
+                <td rowspan="4" class="genero-femenino">Femenino</td>
+                <td colspan="3">Cuidado alto con diversión constante.</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-connection2 columna-generacion">
+                  CONNECTION V<sub>2</sub> - V<sub>5</sub>
+                </td>
+                <td>Violetchi / Furawatchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork10.png" alt="Violetchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite10.webp" alt="Violetchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Amante de las flores y la naturaleza.
+                </td>
+                <td colspan="3">Cuidado bueno, con afecto medio-alto.</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-connection columna-generacion">
+                  CONNECTION V<sub>4</sub> - V<sub>5</sub>
+                </td>
+                <td>Makiko</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork11.webp" alt="Makiko artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite11.webp" alt="Makiko sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Rival de Lovelitchi, muy presumida.
+                </td>
+                <td colspan="3">Cuidado alto y estilo elevado.</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-connection2 columna-generacion">
+                  CONNECTION V<sub>5</sub> - V<sub>6</sub>
+                </td>
+                <td>Chamametchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork12.webp" alt="Chamametchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite12.png" alt="Chamametchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">Hermana pequeña de Mametchi.</td>
+                <td colspan="3">
+                  Cuidado medio-alto, con felicidad constante.
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-connection columna-generacion">
+                  CONNECTION V<sub>3</sub>
+                </td>
+                <td>Sebiretchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork13.webp" alt="Sebiretchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite13.webp" alt="Sebiretchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">Con forma de cebolla, calmado.</td>
+                <td rowspan="2" class="genero-masculino">Masculino</td>
+                <td colspan="3">Cuidado regular y equilibrio emocional.</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-connection2 columna-generacion">
+                  CONNECTION V<sub>4</sub>
+                </td>
+                <td>Yattatchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork14.webp" alt="Yattatchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite14.webp" alt="Yattatchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">Payaso alegre y bromista.</td>
+                <td colspan="3">Cuidado normal, buen nivel de diversión.</td>
+              </tr>
+              <tr>
+                <th colspan="10">
+                  TAMAGOTCHI iD / iD L / P'S / 4U (2009 - 2014)
+                </th>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-id columna-generacion">
+                  Tamagotchi iD / iD L
+                </td>
+                <td>Lovelitchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork15.webp" alt="Lovelitchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite15.webp" alt="Lovelitchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Estrella idol de los Tamagotchi modernos.
+                </td>
+                <td rowspan="2" class="genero-femenino">Femenino</td>
+                <td colspan="3">
+                  Cuidado excelente, con alta felicidad y limpieza.
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" rowspan="2" class="generacion-id2 columna-generacion">
+                  Tamagotchi iD / iD L / P's
+                </td>
+                <td>Meloditchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork16.webp" alt="Meloditchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite16.webp" alt="Meloditchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Amiga y compañera musical de Lovelitchi.
+                </td>
+                <td colspan="3">
+                  Cuidado excelente y vínculo alto con Lovelitchi.
+                </td>
+              </tr>
+              <tr>
+                <td>Spacytchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork17.webp" alt="Spacytchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite17.webp" alt="Spacytchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Alien inteligente y algo travieso.
+                </td>
+                <td class="genero-masculino">Masculino</td>
+                <td colspan="3">
+                  Cuidado medio con momentos de juego y exploración.
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-id columna-generacion">
+                  Tamagotchi P's
+                </td>
+                <td>Dokidokitchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork18.webp" alt="Dokidokitchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite18.jpg" alt="Dokidokitchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  De corazón amoroso, se sonroja fácilmente.
+                </td>
+                <td rowspan="2" class="genero-femenino">Femenino</td>
+                <td colspan="3">
+                  Cuidado alto, sin negligencias ni enfermedades.
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-id2 columna-generacion">
+                  Tamagotchi 4U
+                </td>
+                <td>Clulutchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork19.png" alt="Clulutchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite19.webp" alt="Clulutchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Guapa y carismática, amiga de Lovelitchi.
+                </td>
+                <td colspan="3">
+                  Cuidado muy bueno, alto nivel de diversión.
+                </td>
+              </tr>
 
-              <tfoot>
-                <tr>
-                  <td colspan="10">
-                    <p>
-                      En el mundo de los tamagotchis existen en total cientos de
-                      personajes diferentes y miles de versiones que se han
-                      lanzado al mercado desde 1996. No hay un número total
-                      exacto de personajes de Tamagotchi, pero por ejemplo el
-                      último tamagotchi que ha salido al mercado, "Tamagotchi
-                      Paradise" puede llegar a tener hasta
-                      <strong>¡¡50,000 variaciones!!</strong> Estos son sólo
-                      algunos de los que podemos encontrar...
-                    </p>
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-        </article>
-      </section>
+              <tr>
+                <th colspan="10">
+                  TAMAGOTCHI MIX / Meets / Smart / Uni (2016 - 2023)
+                </th>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-mix columna-generacion">
+                  Tamagotchi Mix
+                </td>
+                <td>Nyatchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork20.webp" alt="Nyatchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite20.webp" alt="Nyatchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">Gatita curiosa y amistosa.</td>
+                <td rowspan="3" class="genero-femenino">Femenino</td>
+                <td colspan="3">Cuidado medio, con interacción frecuente.</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-mix2 columna-generacion">
+                  Tamagotchi Mix / Meets
+                </td>
+                <td>Ningyotchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork21.webp" alt="Ningyotchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite21.webp" alt="Ningyotchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Mitad sirena, mitad tamagotchi, amante del océano.
+                </td>
+                <td colspan="3">Cuidado medio-alto y afecto constante.</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-mix columna-generacion">
+                  Tamagotchi Meets / On
+                </td>
+                <td>Flowertchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork22.webp" alt="Flowertchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite22.webp" alt="Flowertchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Adora la jardinería y los ambientes tranquilos.
+                </td>
+                <td colspan="3">Cuidado bueno, requiere juego frecuente.</td>
+              </tr>
+              <tr>
+                <td colspan="2" rowspan="2" class="generacion-mix2 columna-generacion">
+                  Tamagotchi Smart
+                </td>
+                <td>Tamamatchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork25.webp" alt="Tamamatchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite23.webp" alt="Tamamatchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Moderno y enérgico, le encanta ejercitarse.
+                </td>
+                <td rowspan="2" class="genero-masculino">Masculino</td>
+                <td colspan="3">
+                  Cuidado alto, necesita actividad constante.
+                </td>
+              </tr>
+              <tr>
+                <td>Wiztchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork26.webp" alt="Wiztchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite24.webp" alt="Wiztchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">Mago inteligente y bondadoso.</td>
+                <td colspan="3">
+                  Cuidado medio, con interacciones mentales y aprendizaje.
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="generacion-mix columna-generacion">
+                  Tamagotchi Uni (2023)
+                </td>
+                <td>UniTchi</td>
+                <td>
+                  <img src="images/artwork-tabla/artwork27.webp" alt="UniTchi artwork" class="arte-tamagotchi" />
+                </td>
+                <td>
+                  <img src="images/sprite-tabla/sprite25.webp" alt="UniTchi sprite" class="sprite-tamagotchi" />
+                </td>
+                <td class="columna-notas">
+                  Nuevo personaje central del Tamagotchi Uni.
+                </td>
+                <td class="genero-femenino">Femenino</td>
+                <td colspan="3">
+                  Cuidado excelente, conectado con la red Tamaverse.
+                </td>
+              </tr>
+            </tbody>
 
-      <aside>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-        <p>prueba</p>
-      </aside>
-    </main>
+            <tfoot>
+              <tr>
+                <td colspan="10">
+                  <p>
+                    En el mundo de los tamagotchis existen en total cientos de
+                    personajes diferentes y miles de versiones que se han
+                    lanzado al mercado desde 1996. No hay un número total
+                    exacto de personajes de Tamagotchi, pero por ejemplo el
+                    último tamagotchi que ha salido al mercado, "Tamagotchi
+                    Paradise" puede llegar a tener hasta
+                    <strong>¡¡50,000 variaciones!!</strong> Estos son sólo
+                    algunos de los que podemos encontrar...
+                  </p>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </article>
+    </section>
 
-    <footer>
-      <p>prueba</p>
-      <p>prueba</p>
-    </footer>
-  </body>
+    <aside id="noticias-destacadas" class="noticias tarjeta-lateral">
+      <h2>Noticias destacadas</h2>
+      <ul class="lista-noticias">
+        <li>
+          <a href="#">Anunciado el nuevo "Tamagotchi Paradise" para 2025</a>
+        </li>
+        <li>
+          <a href="#">Guía completa para conseguir a Mametchi en Tamagotchi Uni</a>
+        </li>
+        <li><a href="#">Los fans recrean el primer Tamagotchi en 3D</a></li>
+        <li>
+          <a href="#">Evento de colaboración: ¡Godzilla llega al Tamaverso!</a>
+        </li>
+        <li>
+          <a href="#">¿Vale la pena el Tamagotchi Smart en 2025? Análisis.</a>
+        </li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>MARTA GONZÁLEZ GONZÁLEZ 1ºDAM; LENGUAJE DE MARCA</p>
+  </footer>
+</body>
+
 </html>

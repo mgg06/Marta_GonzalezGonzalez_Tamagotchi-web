@@ -32,16 +32,24 @@
     </div>
 
     <div class="contenedor-titulo">
-      <h1 class="titulo-principal">TEST</h1>
+      <h1 id="titulo-pagina" class="titulo-principal">TEST</h1>
     </div>
   </header>
 
   <main>
     <section class="seccion-test">
-      <article class="test-tamagotchi">
-        <h2 class="titulo-test">TEST TAMAGOTCHI</h2>
-
-        <form action="#" method="post" class="formulario-tamagotchi">
+      <article class="tarjeta-index">
+        <p class="parrafo-intro-test">
+          Tu Tamagotchi está esperando <em>descubrir quién eres</em>… y tú
+          también estás a punto de descubrir un poquito más sobre ti mismo.
+          Antes de que comience la <strong>magia</strong>, necesitamos
+          algunos datos que nos ayudarán a crear tu
+          <em>perfil único de cuidador</em> y la personalidad de tu
+          Tamagotchi ideal.
+        </p>
+        <hr />
+        <form id="formulario-test" class="formulario-tamagotchi">
+          <h2>TEST TAMAGOTCHI</h2>
           <fieldset class="grupo-datos">
             <legend>Datos del cuidador</legend>
 
@@ -72,7 +80,7 @@
           <fieldset class="grupo-personalidad">
             <legend>Personalidad Tamagotchi</legend>
 
-            <label>¿Qué tipo de Tamagotchi crees que serías?</label>
+            <label for="tipo">¿Qué tipo de Tamagotchi crees que serías?</label>
             <select name="tipo" class="selector-tipo">
               <option value="">Selecciona una opción</option>
               <option value="divertido">
@@ -95,23 +103,32 @@
           </fieldset>
 
           <button type="submit" class="boton-enviar">
-            Enviar mi test Tamagotchi
+            ¡ENVIAR MI TEST TAMAGOTCHI!
           </button>
         </form>
+
+        <hr />
+
+        <div class="contenedor-gif-test">
+          <img src="images/gif.gif" alt="GIF animado de Tamagotchi" />
+        </div>
       </article>
     </section>
 
-    <aside>
-      <p>prueba</p>
-      <p>prueba</p>
-      <p>prueba</p>
-      <p>prueba</p>
+    <aside id="noticias-destacadas" class="noticias tarjeta-lateral">
+      <h2>Noticias destacadas</h2>
+      <ul class="lista-noticias">
+        <li><a href="#">Anunciado el nuevo "Tamagotchi Paradise" para 2025</a></li>
+        <li><a href="#">Guía completa para conseguir a Mametchi en Tamagotchi Uni</a></li>
+        <li><a href="#">Los fans recrean el primer Tamagotchi en 3D</a></li>
+        <li><a href="#">Evento de colaboración: ¡Godzilla llega al Tamaverso!</a></li>
+        <li><a href="#">¿Vale la pena el Tamagotchi Smart en 2025? Análisis.</a></li>
+      </ul>
     </aside>
   </main>
 
   <footer>
-    <p>prueba</p>
-    <p>prueba</p>
+    <p>MARTA GONZÁLEZ GONZÁLEZ 1ºDAM; LENGUAJE DE MARCA</p>
   </footer>
 </body>
 

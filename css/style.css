@@ -1,44 +1,43 @@
-/* FUENTES Y CURSOR */
+/* FUENTES Y ESTILOS GLOBALES */
 
 @font-face {
   font-family: "Starshines";
   src: url("fonts/Starshines.ttf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "MADE TOMMY Regular";
   src: url("fonts/MADE TOMMY Regular.otf") format("opentype");
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Starbim";
   src: url("fonts/Starbim.otf") format("opentype");
-  font-style: normal;
-  font-display: swap;
 }
 
-body,
-button,
-a {
-  cursor: url("../images/cursor.cur"), auto;
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "MADE TOMMY Regular", sans-serif;
   margin: 0;
   padding: 0;
+  cursor: url("../images/cursor.cur"), auto;
 }
 
-/* HEADER (lo que es la barra como tal) */
+button,
+a {
+  cursor: url("../images/cursor.cur"), auto;
+}
+
+/* HEADER Y NAVEGACIÓN */
 
 header::before {
-  /* Es obligatorio para que el pseudoelemento exista
-   No muestra texto, simplemente le dice al navegador “crea el bloque” */
   content: "";
   position: fixed;
   top: 0;
@@ -49,8 +48,6 @@ header::before {
   border-bottom: 1px solid #fef102;
   z-index: 89;
 }
-
-/* GIFS LATERALES HEADER */
 
 .gifs-header {
   position: fixed;
@@ -74,8 +71,6 @@ header::before {
 .derecha-gif {
   right: 80px;
 }
-
-/* MENÚ FIJO */
 
 nav {
   position: fixed;
@@ -112,29 +107,31 @@ nav a:hover {
   color: #00264a;
 }
 
-/* CONTENEDOR DEL TÍTULO (BANNER) */
 .contenedor-titulo {
-  width: 100%; 
-  background: rgb(0, 39, 78); 
+  width: 100%;
+  background: rgb(0, 39, 78);
   border-top: 2px solid #fef102;
-  border-bottom: 2px solid #fef102; 
-  box-shadow: 0 0 15px #00274e; 
+  border-bottom: 2px solid #fef102;
+  box-shadow: 0 0 15px #00274e;
   padding: 25px 15px;
   margin: 100px auto auto auto;
-  text-align: center; 
-  backdrop-filter: blur(6px); 
+  text-align: center;
+  backdrop-filter: blur(6px);
 }
 
-/* TÍTULO PRINCIPAL */
 .titulo-principal {
   font-family: "Starbim";
   font-size: 60px;
   color: #fef102;
   margin: 0;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* MAIN, SECTION Y ASIDE DE LA PÁGINA */
+#titulo-pagina {
+  letter-spacing: 2px;
+}
+
+/* ESTRUCTURA PRINCIPAL Y LAYOUT */
 
 main {
   display: grid;
@@ -150,78 +147,6 @@ aside {
   grid-column: 2;
 }
 
-/* FONDO DE LA PÁGINA Y ELEMENTOS GRÁFICOS */
-
-.personajes {
-  background-image: url("../images/fondo.gif");
-  background-size: auto;
-  background-position: center;
-  background-repeat: repeat;
-}
-
-.index {
-  background-image: url("../images/fondo.gif");
-  background-size: auto;
-  background-position: center;
-  background-repeat: repeat;
-}
-
-.imagen-introduccion {
-  max-width: 100%;
-  width: 500px;
-  height: auto;
-  display: block;
-}
-
-.pie-imagen {
-  font-family: "Starshines";
-  color: #fef102;
-  font-size: 15px;
-}
-
-/* FORMULARIO */
-
-.formulario-tamagotchi {
-  background-color: #fef102;
-  border: 2px solid #00274e;
-  border-radius: 12px;
-  padding: 20px 30px;
-  margin: 20px auto;
-  width: 80%;
-  max-width: 700px;
-  box-shadow: 0 0 10px rgba(255, 182, 193, 0.25);
-}
-
-/* TITULO FORMULARIO*/
-.titulo-test {
-  text-align: center;
-  color: #fef102;
-  font-size: 1.6em;
-  margin-bottom: 20px;
-}
-
-/* AGRUPACIONES FORMULARIO*/
-fieldset {
-  border: 2px dashed #00274e;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  padding: 15px;
-}
-
-legend {
-  font-weight: bold;
-  color: #00274e;
-  font-size: 1.1em;
-  padding: 0 8px;
-}
-
-/* CAMPOS Y ETIQUETAS FORMULARIO */
-label {
-  display: block;
-  margin: 10px 0 5px;
-  font-weight: 500;
-}
-
 input,
 select,
 textarea {
@@ -230,114 +155,107 @@ textarea {
   border-radius: 8px;
   border: 1px solid #00274e;
   font-size: 1em;
+  box-sizing: border-box;
   background-color: #00274e;
+  color: white;
   transition: border-color 0.3s;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-  border-color: #00274e;
-  outline: none;
-  color: white;
-}
+/* TARJETAS Y CONTENEDORES PRINCIPALES */
 
-input[type="range"] {
-  width: 80%;
-  accent-color: #00274e;
-  /* Pone de ese color la barra del formulario */
-}
-
-textarea {
-  resize: vertical;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1em;
-  background-color: #00274e;
-  color: white;
-  transition: border-color 0.3s, background-color 0.3s;
-}
-
-/* Mantener texto blanco cuando el campo pierde el foco */
-input::placeholder,
-textarea::placeholder {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-input,
-textarea {
-  caret-color: white;
-  /* el cursor también blanco */
-}
-
-/* Asegura que el texto no cambie de color en ningún estado */
-input:focus,
-input:valid,
-select:focus,
-select:valid,
-textarea:focus,
-textarea:valid {
-  color: white;
-  background-color: #00274e;
-  border-color: #00274e;
-  outline: none;
-}
-
-/* BOTÓN DE ENVÍO FORMULARIO */
-.boton-enviar {
-  display: block;
-  background-color: #00274e;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 25px;
-  font-size: 1.1em;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 20px auto;
-  transition: background-color 0.3s, transform 0.2s;
-  color: white;
-}
-
-.boton-enviar:hover {
-  background-color: #00274e;
-  transform: scale(1.05);
-}
-
-/* TARJETA INTRODUCCIÓN PÁGINA PERSONAJES */
-
-.tarjeta-introduccion {
-    background: rgba(255, 255, 255, 0.15);
+.tarjeta-index {
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(6px);
   border-radius: 20px;
   border: 2px solid #00274e;
   box-shadow: 0 0 15px rgba(0, 39, 78, 0.4);
+  padding: 20px 80px;
+  margin: 20px;
+  color: #00274e;
+}
+
+.tarjeta-index h2 {
+  font-family: "Starbim", sans-serif;
+  font-size: 40px;
+  color: #00274e;
+  text-shadow: 2px 2px 0px #fef102;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.tarjeta-introduccion {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  border: 2px solid #00274e;
+  box-shadow: 0 0 15px rgba(0, 39, 78, 0.4);
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
   padding: 20px;
-  width: 1000px;
-  margin: 40px auto; 
-  height: 200px;
   display: flex;
   align-items: center;
   gap: 30px;
   text-align: justify;
 }
 
-.imagen-introduccion-tarjeta {
-  width: 350px;
-  height: auto;
-  border-radius: 15px;
+.tarjeta-tabla {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
   border: 2px solid #00274e;
+  border-radius: 20px;
+  padding: 20px 25px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  box-shadow: 0 0 15px rgba(0, 39, 78, 0.4);
+  overflow-x: auto;
+}
+
+/* ESTILOS DE TEXTO ESPECÍFICOS */
+
+.tarjeta-index p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.texto-bienvenida {
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.enfasis-azul {
+  color: #00274e;
+}
+
+mark {
+  background-color: #fef102;
+  color: #00274e;
+  font-weight: bold;
+}
+
+.tarjeta-index .texto-tienda {
+  text-align: center;
+}
+
+.tarjeta-index .texto-recursos {
+  text-align: center;
+}
+
+.parrafo-intro-test {
+  font-size: 1.2em;
+  text-align: justify;
+  margin-bottom: 30px;
+  padding: 0 20px;
 }
 
 .texto-tarjeta {
   color: #00274e;
   font-family: "MADE TOMMY Regular";
+  flex: 1;
 }
 
 .texto-tarjeta h2 {
@@ -348,11 +266,261 @@ textarea:valid {
 }
 
 .texto-tarjeta p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
-/* ESTILOS DE LA TABLA PERSONAJES */
+.pie-imagen {
+  font-family: "Starshines";
+  color: #fef102;
+  font-size: 18px;
+  text-shadow: -1.5px -1.5px 0 #00274e, 1.5px -1.5px 0 #00274e,
+    -1.5px 1.5px 0 #00274e, 1.5px 1.5px 0 #00274e;
+  display: block;
+  margin-top: 10px;
+}
+
+/* FONDOS Y ELEMENTOS GRÁFICOS */
+
+.personajes,
+.index,
+.dispositivos {
+  background-image: url("../images/fondo.gif");
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.contenedor-imagen {
+  text-align: center;
+}
+
+.video-tamagotchi {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.video-tamagotchi a {
+  display: inline-block;
+  position: relative;
+  border: 4px solid #fef102;
+  outline: 3px solid #00274e;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  background-color: white;
+}
+
+.video-tamagotchi img {
+  border-radius: 15px;
+  max-width: 100%;
+  width: 560px;
+}
+
+.video-tamagotchi a::before {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  transition: transform 0.2s ease;
+}
+
+.mapa-tienda {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.mapa-tienda iframe {
+  border: 4px solid #fef102;
+  outline: 3px solid #00274e;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  background-color: white;
+  max-width: 100%;
+}
+
+.contenedor-gif-test {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.lista-noticias {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-noticias li {
+  border-bottom: 1px dashed #00274e;
+  padding: 10px 5px;
+}
+
+.lista-noticias a {
+  text-decoration: none;
+  color: #00274e;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.imagen-introduccion {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid #fef102;
+  outline: 3px solid #00274e;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  background-color: white;
+}
+
+.imagen-introduccion-tarjeta {
+  width: 35%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #00274e;
+}
+
+.imagen-curiosidades {
+  display: block;
+  margin: 20px auto;
+}
+
+.lista-comparativa {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+/* ASIDE (BARRA LATERAL) */
+
+.tarjeta-lateral {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  border: 2px solid #00274e;
+  box-shadow: 0 0 15px rgba(0, 39, 78, 0.4);
+  padding: 20px;
+  margin: 20px;
+  color: #00274e;
+}
+
+.tarjeta-lateral h2 {
+  font-family: "Starbim", sans-serif;
+  font-size: 30px;
+  color: #00274e;
+  text-shadow: 2px 2px 0px #fef102;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* FOOTER (PIE DE PÁGINA) */
+
+footer {
+  width: 100%;
+  background: #00274e;
+  border-top: 1px solid #fef102;
+  padding: 15px 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: #fef102;
+}
+
+/* PÁGINA PERSONAJES (TABLA) */
+
+.tarjeta-tabla table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tarjeta-tabla th,
+.tarjeta-tabla td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.generacion-original {
+  background-color: #fdfd96;
+}
+
+.generacion-connection {
+  background-color: #d6f5ff;
+}
+
+.generacion-connection2 {
+  background-color: #d6f5ff79;
+}
+
+.generacion-id {
+  background-color: #f6e1ff;
+}
+
+.generacion-id2 {
+  background-color: #f6e1ff77;
+}
+
+.generacion-mix {
+  background-color: #d8ffd6;
+}
+
+.generacion-mix2 {
+  background-color: #d8ffd671;
+}
+
+.genero-masculino {
+  background-color: #b3d9ff;
+}
+
+.genero-femenino {
+  background-color: #ffd6e7;
+}
+
+.arte-tamagotchi {
+  width: 75px;
+  height: 75px;
+  border-radius: 6px;
+}
+
+.sprite-tamagotchi {
+  width: 60px;
+  height: 60px;
+}
+
+.columna-generacion {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.columna-notas {
+  text-align: justify;
+}
+
+.arte-tamagotchi,
+.sprite-tamagotchi {
+  display: block;
+  margin: auto;
+}
 
 table {
   width: 1000px;
@@ -369,6 +537,7 @@ td {
   padding: 8px 10px;
   text-align: center;
   color: #00274e;
+  font-size: 14px;
   vertical-align: middle;
 }
 
@@ -386,7 +555,6 @@ th[colspan="10"] {
   padding: 12px;
 }
 
-/* SUBENCABEZADOS TABLA */
 tr:nth-child(2) th,
 tr:nth-child(3) th {
   background-color: #fef102;
@@ -395,76 +563,138 @@ tr:nth-child(3) th {
   font-weight: bold;
 }
 
-/* TFOOT */
 tfoot td {
   text-align: justify;
   padding: 15px;
   background-color: #fef102;
+  font-size: 16px;
 }
 
-/* TARJETA DE FONDO PARA LA TABLA */
-.tarjeta-tabla {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(6px); 
-  border: 2px solid #00274e; 
-  border-radius: 20px;
-  padding: 20px 25px;
-  width: fit-content;
-  margin: 30px auto;
-  box-shadow: 0 0 15px rgba(0, 39, 78, 0.4); 
+/* PÁGINA DISPOSITIVOS */
+
+#lista-dispositivos {
+  list-style-type: "👾";
+  padding-left: 30px;
 }
 
-/* CLASES DE LAS GENERACIONES DE LA TABLA PERSONAJES */
-
-/* Generación original */
-.generacion-original {
-  background-color: #fdfd96;
+.dispositivos h2 {
+  font-family: "Starbim", sans-serif;
+  font-size: 40px;
+  color: #00274e;
+  text-shadow: 2px 2px 0px #fef102;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-/* Generación connection */
-.generacion-connection {
-  background-color: #d6f5ff;
+.dispositivos h3 {
+  font-family: "MADE TOMMY Regular", sans-serif;
+  font-size: 34px;
+  color: #00274e;
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-.generacion-connection2 {
-  background-color: #d6f5ff79;
+.seccion-dispositivos p,
+.seccion-dispositivos ul {
+  font-size: 1.1em;
+  text-align: justify;
+  line-height: 1.6;
 }
 
-/* Generación id */
-.generacion-id {
-  background-color: #f6e1ff;
+.sublista-square {
+  list-style-type: square;
 }
 
-.generacion-id2 {
-  background-color: #f6e1ff77;
+.sublista-circle {
+  list-style-type: circle;
 }
 
-/* Generación mix */
-.generacion-mix {
-  background-color: #d8ffd6;
+.sublista-disc {
+  list-style-type: disc;
 }
 
-.generacion-mix2 {
-  background-color: #d8ffd671;
+.titulo-normal {
+  font-family: "MADE TOMMY Regular", sans-serif !important;
+  text-shadow: none !important;
 }
 
-/* COLOREAR CELDAS GENERO */
-.genero-masculino {
-  background-color: #b3d9ff;
+/* PÁGINA TEST (FORMULARIO) */
+
+.formulario-tamagotchi {
+  padding: 20px 30px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 700px;
 }
 
-.genero-femenino {
-  background-color: #ffd6e7;
+.seccion-test .tarjeta-index {
+  margin: 20px 100px;
 }
 
-/* CLASES DE LAS IMÁGENES DE LA TABLA TAMAGOTCHI */
-.arte-tamagotchi {
-  width: 85px;
-  height: 85px;
-  border-radius: 6px;
+fieldset {
+  border: 2px dashed #00274e;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
 }
 
-.sprite-tamagotchi {
-  width: 50px;
-  height: 50px;
+legend {
+  font-weight: bold;
+  color: #00274e;
+  font-size: 1.1em;
+  padding: 0 8px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+input[type="range"] {
+  width: 80%;
+  accent-color: #00274e;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input,
+textarea {
+  caret-color: white;
+}
+
+input:focus,
+input:valid,
+select:focus,
+select:valid,
+textarea:focus,
+textarea:valid {
+  color: white;
+  background-color: #00274e;
+  border-color: #00274e;
+  outline: none;
+}
+
+.boton-enviar {
+  display: block;
+  background-color: #00274e;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: background-color 0.3s;
+  color: white;
+  box-shadow: 2px 2px 0px #fef102;
 }

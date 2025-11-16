@@ -16,15 +16,6 @@
       <img src="images/izquierda3.gif" alt="azul-rodando" />
     </div>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="personajes.html">Personajes</a></li>
-        <li><a href="dispositivos.html">Dispositivos</a></li>
-        <li><a href="test.html">Test</a></li>
-      </ul>
-    </nav>
-
     <div class="gifs-header derecha-gif">
       <img src="images/derecha1.gif" alt="abeja-andando" />
       <img src="images/derecha2.gif" alt="conejo-rosa-girando" />
@@ -35,85 +26,94 @@
       <h1 id="titulo-pagina" class="titulo-principal">TEST</h1>
     </div>
   </header>
-
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="personajes.html">Personajes</a></li>
+      <li><a href="dispositivos.html">Dispositivos</a></li>
+      <li><a href="test.html">Test</a></li>
+    </ul>
+  </nav>
   <main>
     <section class="seccion-test">
-      <article class="tarjeta-index">
-        <p class="parrafo-intro-test">
-          Tu Tamagotchi está esperando <em>descubrir quién eres</em>… y tú
-          también estás a punto de descubrir un poquito más sobre ti mismo.
-          Antes de que comience la <strong>magia</strong>, necesitamos algunos
-          datos que nos ayudarán a crear tu
-          <em>perfil único de cuidador</em> y la personalidad de tu Tamagotchi
-          ideal.
-        </p>
-        <hr />
-        <form id="formulario-test" class="formulario-tamagotchi">
-          <h2>TEST TAMAGOTCHI</h2>
-          <fieldset class="grupo-datos">
-            <legend>Datos del cuidador</legend>
+      <div class="tarjeta-index">
+        <article>
+          <p class="parrafo-intro-test">
+            Tu Tamagotchi está esperando <em>descubrir quién eres</em>… y tú
+            también estás a punto de descubrir un poquito más sobre ti mismo.
+            Antes de que comience la <strong>magia</strong>, necesitamos algunos
+            datos que nos ayudarán a crear tu
+            <em>perfil único de cuidador</em> y la personalidad de tu Tamagotchi
+            ideal.
+          </p>
+          <hr />
+          <form id="formulario-test" class="formulario-tamagotchi">
+            <h2>TEST TAMAGOTCHI</h2>
+            <fieldset class="grupo-datos">
+              <legend>Datos del cuidador</legend>
 
-            <label for="email">Introduce tu correo electrónico para recibir el
-              resultado:</label>
-            <input type="email" id="email" name="email" required />
+              <label for="email">Introduce tu correo electrónico para recibir el
+                resultado:</label>
+              <input type="email" id="email" name="email" required />
 
-            <label for="fecha">¿Cuándo compraste tu primer Tamagotchi?</label>
-            <input type="date" id="fecha" name="fecha" />
+              <label for="fecha">¿Cuándo compraste tu primer Tamagotchi?</label>
+              <input type="date" id="fecha" name="fecha" />
 
-            <label for="dni">Introduce tu DNI (obligatorio 8 números y una letra):</label>
-            <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]{1}"
-              title="Debe tener 8 números y una letra al final. Ejemplo: 12345678A" required />
-          </fieldset>
+              <label for="dni">Introduce tu DNI (obligatorio 8 números y una letra):</label>
+              <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]{1}"
+                title="Debe tener 8 números y una letra al final. Ejemplo: 12345678A" required />
+            </fieldset>
 
-          <fieldset class="grupo-estilo">
-            <legend>Tu estilo de cuidado</legend>
+            <fieldset class="grupo-estilo">
+              <legend>Tu estilo de cuidado</legend>
 
-            <label for="paciencia">¿Qué nivel de paciencia tienes con tu Tamagotchi?</label>
-            <input type="range" id="paciencia" name="paciencia" min="1" max="10" value="5" />
+              <label for="paciencia">¿Qué nivel de paciencia tienes con tu Tamagotchi?</label>
+              <input type="range" id="paciencia" name="paciencia" min="1" max="10" value="5" />
 
-            <label for="tamago-num">¿Cuántos Tamagotchis cuidas al mismo tiempo?</label>
-            <input type="number" id="tamago-num" name="tamago-num" min="1" max="10" required />
+              <label for="tamago-num">¿Cuántos Tamagotchis cuidas al mismo tiempo?</label>
+              <input type="number" id="tamago-num" name="tamago-num" min="1" max="10" required />
 
-            <label for="hora">¿A qué hora sueles utilizar más a tu Tamagotchi?</label>
-            <input type="time" id="hora" name="hora" />
-          </fieldset>
+              <label for="hora">¿A qué hora sueles utilizar más a tu Tamagotchi?</label>
+              <input type="time" id="hora" name="hora" />
+            </fieldset>
 
-          <fieldset class="grupo-personalidad">
-            <legend>Personalidad Tamagotchi</legend>
+            <fieldset class="grupo-personalidad">
+              <legend>Personalidad Tamagotchi</legend>
 
-            <label for="tipo">¿Qué tipo de Tamagotchi crees que serías?</label>
-            <select name="tipo" class="selector-tipo">
-              <option value="">Selecciona una opción</option>
-              <option value="divertido">
-                El divertido (siempre jugando)
-              </option>
-              <option value="responsable">
-                El responsable (nunca lo dejas morir)
-              </option>
-              <option value="dramatico">
-                El dramático (cada beep es una tragedia)
-              </option>
-              <option value="soñador">
-                El soñador (vive en su propio mundo pixelado)
-              </option>
-            </select>
+              <label for="tipo">¿Qué tipo de Tamagotchi crees que serías?</label>
+              <select name="tipo" class="selector-tipo">
+                <option value="">Selecciona una opción</option>
+                <option value="divertido">
+                  El divertido (siempre jugando)
+                </option>
+                <option value="responsable">
+                  El responsable (nunca lo dejas morir)
+                </option>
+                <option value="dramatico">
+                  El dramático (cada beep es una tragedia)
+                </option>
+                <option value="soñador">
+                  El soñador (vive en su propio mundo pixelado)
+                </option>
+              </select>
 
-            <label for="historia">Describe una anécdota con tu Tamagotchi:</label>
-            <textarea id="historia" name="historia" rows="4"
-              placeholder="Cuéntanos una historia divertida o trágica..."></textarea>
-          </fieldset>
+              <label for="historia">Describe una anécdota con tu Tamagotchi:</label>
+              <textarea id="historia" name="historia" rows="4"
+                placeholder="Cuéntanos una historia divertida o trágica..."></textarea>
+            </fieldset>
 
-          <button type="submit" class="boton-enviar">
-            ¡ENVIAR MI TEST TAMAGOTCHI!
-          </button>
-        </form>
+            <button type="submit" class="boton-enviar">
+              ¡ENVIAR MI TEST TAMAGOTCHI!
+            </button>
+          </form>
 
-        <hr />
+          <hr />
 
-        <div class="contenedor-gif-test">
-          <img src="images/gif.gif" alt="GIF de Tamagotchi" />
-        </div>
-      </article>
+          <div class="contenedor-gif-test">
+            <img src="images/gif.gif" alt="GIF de Tamagotchi" />
+          </div>
+        </article>
+      </div>
     </section>
 
     <aside class="tarjeta-lateral">
